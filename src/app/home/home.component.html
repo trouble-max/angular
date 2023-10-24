@@ -1,0 +1,13 @@
+<div class="productlist">
+    <div *ngFor="let post of posts" class="products">
+        <div>
+            {{post.text}}
+        </div>
+        <div>
+            {{post.liked}}
+        </div>
+        <div>
+            <button (click)="like(post.id)">Like</button>
+        </div>
+    </div>
+</div>
